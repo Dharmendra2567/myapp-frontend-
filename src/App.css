@@ -1,0 +1,27 @@
+.carousel-item img {
+    height: 450px;
+    width: 1300px;
+}
+.custom-background{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(17,114,224,1) 14.1%, rgba(115,190,205,1) 81.6% );
+}
+
+.card-img-top {
+    height: 200px;
+    
+}
+#nbar {
+    overflow: hidden;
+    /* background-color: #666666; */
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+  }
+  .customMargin{
+    margin: 105px 0;
+  }
+ .profile-image{
+  margin-left: 0px;
+  margin-bottom:30px;
+  height: 120px;
+ }
