@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const CardGroup = () => {
   return (
     <>
-    <div className="card-group my-3 p-3">
+    <div className="card-group my-3">
   <div className="card g-4">
     <img src="https://www.epo.org/about-us/annual-reports-statistics/statistics/2020/digital-technologies/TopVisual.jpg?lenya.module=svg&height=283&width=76" className="card-img-top"
        alt="..."/>

@@ -67,7 +67,7 @@ export const signOut = () => {
 }
 
 //forget password
-export const forgetPassword = (email) => {
+export const forgetPassword = ({email}) => {
     return fetch(`${API}/forgetpassword`, {
         method: "POST",
         headers: {
