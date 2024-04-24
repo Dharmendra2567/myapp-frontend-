@@ -12,7 +12,7 @@ const EmailConfirmation = () => {
     // const {token} = useParams()
     useEffect(()=>{
         setError('')
-        setSuccess(false)
+        setSuccess('')
         confirmEmail(token)
         .then(data=>{
             if(data.error){

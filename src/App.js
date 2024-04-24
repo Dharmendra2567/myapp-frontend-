@@ -14,21 +14,7 @@ import { Store } from "./finalReducers/store";
 
 function App() {
 
-  // const persistConfig = {
-  //   key: 'root',
-  //   storage,
-  // }
-
-  // const rootReducer = combineReducers({
-  //   counter: CounterReducer,
-  //   game: GameReducer
-  // })
-  // const persistedReducer = persistReducer(persistConfig, rootReducer)
-  // // const myStore = createStore(CounterReducer)
-  // // const myStore= createStore(rootReducer)
-  // const myStore = createStore(persistedReducer)
-  // let mypersistor = persistStore(myStore)
-
+  
   return (
 
     <>

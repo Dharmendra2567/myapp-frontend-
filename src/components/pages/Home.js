@@ -8,10 +8,12 @@ import Navbar from '../layouts/Navbar'
 const Home = () => {
   return (
    <>
+   <div className='container-fluid'>
    <Navbar/>
    <div className='customMargin'>
    <Carousel/>
    <CardGroup/>
+   </div>
    </div>
    </>
   )

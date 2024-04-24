@@ -10,6 +10,7 @@ const Register = () => {
     let [password, setPassword] = useState('')
     let [error, setError] =useState('')
     let [success, setSuccess] = useState(false)
+    
     const handleSubmit=e=>{
         setError('')
         setSuccess(false)

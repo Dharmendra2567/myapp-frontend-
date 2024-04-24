@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className='container-fluid fixed-top '>
     <div className="row custom-background">
         <div className="col-md-3 text-center fw-bold tx-dark fs-3">
-        <Link className="navbar-brand" to="/">Oue Store</Link>
+        <Link className="navbar-brand" to="/"> MyKart</Link>
         </div>
         <div className="col-md-6 mt-1">
         <form className="d-flex" role="search">
