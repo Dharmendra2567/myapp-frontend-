@@ -1,4 +1,4 @@
-![](http://imgur.com/t3teAxi.png)
+![](https://imgur.com/t3teAxi.png)
 
 Welcome to my ecommerce project! This project consists of two parts: the frontend and the backend.
 
@@ -103,7 +103,28 @@ The following environment variables are required for the backend to run:
 
 ## Preview
 
-![Website Preview](path_to_your_image)
+## Home Page
+<img src="public/projectImage/homePage.png" alt="product" >
+
+## Product Page
+<img src="public/projectImage/AllProducts.png" alt="product" >
+
+## Cart Items
+<img src="public/projectImage/cartItems.png" alt="product" >
+
+## Register Page
+<img src="public/projectImage/Registration.png" alt="product" >
+
+
+## CheckOut Page
+<img src="public/projectImage/checkoutPage.png" alt="product" >
+
+## Admin Dashboard
+<img src="public/projectImage/productList.png" alt="product" >
+
+
+## Add Product Page
+<img src="public/projectImage/addProduct.png" alt="product" >
 
 ## Contributing
 
@@ -112,4 +133,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
