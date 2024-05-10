@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+![](http://imgur.com/t3teAxi.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my ecommerce project! This project consists of two parts: the frontend and the backend.
 
-## Available Scripts
+# MyKart
 
-In the project directory, you can run:
+**MyKart: ** it's an open source (test scenario) software made to create a easy and simple "Shop" API, where you have two micro services, one the **Products API** that stores and handles everything Related to Stock and Products. And the **Purchase API** where you can create orders (cart's) and checkout items.
 
-### `npm start`
+The purpose of this repository it's for education and test. But the code it's being coded in a proper way.
+### Instructions to Run Frontend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone this repository.
+2. Navigate to the `myapp-frontend` directory.
+3. Create a `.env` file in the root directory of `myapp-backend` with the necessary environment variables. (See below for details)
+4. Install dependencies using `npm install`.
+5. Start the development server using `npm start`.
+6. Access the frontend at [http://localhost:3000](http://localhost:3000) in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Environment Variables
 
-### `npm test`
+The following environment variables are required for the backend to run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `REACT_APP_BACKEND_URL`: The backend URL should be placed here either localhost or live url.
+- 
+**Note:** Ensure that you do not push your `.env` file to GitHub for security reasons. Add it to your `.gitignore` file to prevent accidental commits.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<b>Admin Dashboard</b>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Manage Users Details | &#10004; | Ability of Edit and Delete Users Details |
+| Manage Orders | &#10004; | Ability of Managing Order Details |
+| Login & Logout | &#10004; | Admin can login and logout successfully |
+| Product Features | &#10004; | Only Admin can manage all Product Features Mentioned Below|
+| Selective Routes | &#10004; | Admims are restricted to surf some url such as place order,add to cart etc|
 
-### `npm run eject`
+<b>Products Features</b>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Add a Product | &#10004; | Ability of Add a Product on the System |
+| List Products | &#10004; | Ability of List Products |
+| Edit a Product | &#10004; | Ability of Edit a Product |
+| Delete a Product | &#10004; | Ability of Delete a Product |
+| Stock | &#10004; | Ability of Update the Stock |
+| Stock History | &#10004; | Ability to see the Stock History |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<b>User Dashboard</b>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Login & Logout | &#10004; | Admin can login and logout successfully |
+| Purchase Features | &#10004; | Only normal user can access all mentioned Purchase Features below such as placing order|
+| Selective Routes | &#10004; | Normal Users are restricted to surf some url which are for Admin only|
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<b>Purchase Features</b>
 
-## Learn More
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Create a Cart | &#10004; | Ability of Create a new Cart |
+| See Cart | &#10004; | Ability to see the Cart and it items |
+| Remove a Cart | &#10004; | Ability of Remove a Cart |
+| Add Item | &#10004; | Ability of add a new Item on the Cart |
+| Remove a Item | &#10004; | Ability of Remove a Item from the Cart |
+| Checkout | &#10004; | Ability to Checkout |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## MyKart (myapp-backend)
 
-### Code Splitting
+The backend of the project handles data management and business logic. It is built using [Node.js](https://nodejs.org/) and [Express](https://expressjs.com/), and runs on port 5000.
+Clone myapp-backend from the given repository[myapp-backend](https://github.com/Dharmendra2567/myapp-backend) and follow the mentioned instructions below.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Instructions to Run Backend:
 
-### Analyzing the Bundle Size
+1. Clone this repository.
+2. Navigate to the `myapp_backend` directory.
+3. Install dependencies using `npm install`.
+4. Create a `.env` file in the root directory of `myapp_backend` with the necessary environment variables. (See below for details)
+5. Start the server using `npm start`.
+6. The backend will be accessible at [http://localhost:5000](http://localhost:5000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Environment Variables
 
-### Making a Progressive Web App
+The following environment variables are required for the backend to run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `PORT`: Port number for the backend server (default is 5000).
+- `DATABASE` : Link of the database server
+- SMTP infromation are provided to your dashboard when you sign up at [mailtrap.io](https://www.mailtrap.io) which is email delivery platform.
+- `SMTP_HOST` : Place smtp host address
+- `SMTP_PORT` : place smtp port address
+- `SMTP_USER` : place smtp username
+- `SMTP_PASS` : place smtp password
+- `JWT_SECRET` : It is secret key to provide security. Just place any randrom string you want.
+- `FRONTEND_URL` : place url of your frontend server
+- Ensure you have created account at stripe payment gateway.you will get following key from [Stripe Dashboard](https://www.stripe.dashboard.com) only
+- `STRIPE_SECRET_KEY` : place the stipe secret key
+- `STRIPE_API_KEY`: place the stripe api key provided to your dashboard
+-
+**Note:** Ensure that you do not push your `.env` file to GitHub for security reasons. Add it to your `.gitignore` file to prevent accidental commits.
 
-### Advanced Configuration
+## Preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Website Preview](path_to_your_image)
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to create a pull request or open an issue.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
+
